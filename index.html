@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Laundry Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Laundry Web</title>
+    <script src="https://kit.fontawesome.com/eab0de59f6.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+    <!-- navbar section -->
+    <nav>
+        <div class="navbar">
+            <div class="navbar-title">
+                <a>Fast<span class="Fast">Laundry</span></a>
+            </div>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
+                <button class="tablinks" onclick="openCity(event, 'price-list')">Price List</button>
+                <button class="tablinks" onclick="openCity(event, 'calculate-price')">Calculate Price</button>
+                <button class="tablinks" onclick="openCity(event, 'contact')">Contact</button>
+            </div>
+            
+            <div class="booking">
+                <button id="booking-btn" onclick="bookNow1()">Booking</button>
+            </div>
+        </div>
+    </nav>
+    <!-- nav section end -->
+    
+    <!-- tab content section -->
+    <div id="home" class="tab-content">
+        <div class="hero" id="home">
+            <main class="content">
+                <h1>Best Express Laundry Service</h1>
+                <h1>24 Hours In Jakarta</h1>
+                <h3>We are open 24 hours to provide you with express laundry service, 3 hour express delivery,
+                    suitable for those of you who have busy activities and need express laundry services
+                    reliable experience.</h3>
+                <h3>LaundryFast also provides washing services for suits, dolls, bed sheets, bed covers,
+                    Mountain Shoes, Keds,  and many more types
+                    what we do.</h3>
+                    <div class="booking">
+                        <button id="booking-btn" onclick="bookNow1()">Booking</button>
+                    </div>
+            </main>
+        </div>
+
+        <section class="isi">
+            <div class="contact">
+                <div class="box">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h2>Contact Us</h2>
+                    <p>(62)81808151558</p>
+                </div>
+                <div class="box">
+                    <i class="fa-regular fa-clock"></i>
+                    <h2>Open Daily 24 Hours</h2>
+                    <p>Monday to Sunday</p>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h2>Order Via Whatsapp</h2>
+                    <p>(62)81808151558</p>
+                </div>
+            </div>
+        
+
+        <div class="container">
+            <h1 class="heading">Our Advantages</h1>
+            <div class="box-container">
+                <div class="box">
+                    <h2>Quality Laundry</h2>
+                    <p>Fastlaundry always double-checks the quality of the work done by our employees. The materials used are quality materials and are processed by our laundry ourselves. From the work that is always double
+                        check, the laundry materials used are guaranteed, and the ironing process employees always maintain quality to produce good laundry results.</p>
+                </div>
+                <div class="box">
+                    <h2>Open 24 Hours</h2>
+                    <p>FastLaundry is open 24 hours every day. Not only laundry services are 24 hours, but also include laundry pick-up and drop-off from customers to laundry and vice versa 24 hours. So that
+                        We can provide optimal service whenever you make a reservation for our services, because we realize the density of your activities and precious time</p>
+                </div>
+                <div class="box">
+                    <h2>Fast Process</h2>
+                    <p>FastLaundry has one of the advantages that
+                        Very superior, namely the process of working very fast on customer laundry. FastLaundry has several choices of laundry processing services, namely LAUNDRY EXPRESS 3 HOURS, LAUNDRY EXPRESS 6 HOURS, LAUNDRY EXPRESS 12 HOURS, AND LAUNDRY EXPRESS 1 DAY, ACCORDING TO YOUR NEEDS.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="aspect">
+            <h1 class="heading">Important Aspects of Laundry</h1>
+            <div class="main">
+                <div class="isi1">
+                    <div class="img">
+                        <img src="img/laundry (2).jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h1>Laundry is the process of cleaning clothes, linen, and other fabrics using water and detergent or other cleaning agents. This washing process aims to remove dirt, stains, and odors that stick to clothes so that they are clean, fresh, and comfortable to use again. Here are some important aspects about laundry:
+                        </h1>
+                        <p> <span>• Washing Method:</span> There are several commonly used washing methods, including machine washing, hand washing, and dry cleaning. Dry cleaning uses chemical solvents instead of water, and is typically used for clothes that are sensitive to water or contain ingredients that cannot be washed with water.</p>
+                        <p> <span>• Detergents and Cleaning Agents:</span> Detergents are chemicals that are used to remove stains and dirt from clothes during the washing process. There are different types of detergents designed for different types of fabrics and dirt levels.</p>
+                    </div>
+                </div>
+                <div class="isi2">
+                    <p> <span>• Washing Machine and Dryer:</span> A washing machine is an electronic device that automatically washes clothes by mixing water, detergent, and mechanical movements. A dryer is a device that is used to dry clothes after washing.</p>
+                    <p> <span>• Ironing:</span> After washing, clothes often need to be ironed to keep them neat and wrinkle-free. An iron is a device that generates heat to level fabrics.</p>
+                    <p> <span>• Commercial Laundry:</span> In addition to personal laundry, there are also commercial laundry businesses that provide laundry and ironing services for customers, such as kilo laundry or express laundry.</p>
+                    <p> <span>• Technology and Innovation:</span> The washing industry continues to adopt new technologies to improve efficiency and finishes, such as automated washing systems, more effective use of detergents, and advanced drying technologies.</p>
+                    <p> <span>• Material Care:</span> Each type of fabric may require special treatment during the washing process. Care instructions are listed on the clothing label and must be followed to keep the garment durable and undamaged.</p>
+                    <p> <span>• Hygiene and Health:</span> Proper washing helps to maintain the cleanliness and health of clothing, especially essential for hospital underwear and linen.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact2">
+            <div class="box">
+                <i class="fa-regular fa-calendar-days"></i>
+                <h2>5 Years+</h2>
+                <p>experienced</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-user"></i>
+                <h2>99%</h2>
+                <p>Customer satisfaction</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-hands-bubbles"></i>
+                <h2>20,000+</h2>
+                <p>total clothing</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-briefcase"></i>
+                <h2>1000+</h2>
+                <p>exclusive customers</p>
+            </div>
+        </div>
+
+        <div class="price">
+            <h1 class="heading">Options</h1>
+            <div class="content">
+                <div class="row mt-5" id="filter-buttons">
+                    <div class="isi5">
+                        <button class="btn mb-2 me-1 active" data-filter="kilo">Kilogram</button>
+                        <button class="btn mb-2 mx-1" data-filter="deep">Deep Cleaning</button>
+                        <button class="btn mb-2 mx-1" data-filter="shoe">Shoe Wash</button>
+                    </div>
+                </div>
+
+                <div class="shop-content" id="filterable-cards">
+                    <div class="box-container1" data-name="kilo">
+                        <div class="box">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                            <h2>3 Hours</h2>
+                            <h1>Rp 25,000</h1>
+                            <p>/ Kilogram</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Wash separately according to color, material and type of clothing.</p>   
+                                <p>Check more thoroughly.</p>    
+                                <p>Ironing is neater.</p>    
+                                <p>Guaranteed not to fade.</p>    
+                                <p>Packaging is folded.</p> 
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                            <h2>6 Hours</h2>
+                            <h1>Rp 15,000</h1>
+                            <p>/ Kilogram</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Wash separately according to color, material and type of clothing.</p>   
+                                <p>Check more thoroughly.</p>    
+                                <p>Ironing is neater.</p>    
+                                <p>Guaranteed not to fade.</p>    
+                                <p>Packaging is folded.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                            <h2>12 Hours</h2>
+                            <h1>Rp 10,000</h1>
+                            <p>/ Kilogram</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Wash separately according to color, material and type of clothing.</p>   
+                                <p>Check more thoroughly.</p>    
+                                <p>Ironing is neater.</p>    
+                                <p>Guaranteed not to fade.</p>    
+                                <p>Packaging is folded.</p>  
+                            </div>  
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                            <h2>1 Day</h2>
+                            <h1>Rp 6,000</h1>
+                            <p>/ Kilogram</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Wash separately according to color, material and type of clothing.</p>   
+                                <p>Check more thoroughly.</p>    
+                                <p>Ironing is neater.</p>    
+                                <p>Guaranteed not to fade.</p>    
+                                <p>Packaging is folded.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="box-container1" data-name="deep" >
+                        <div class="box">
+                            <i class="fa-solid fa-shirt"></i>
+                            <h2>3 Hours</h2>
+                            <h1>Rp 15,000</h1>
+                            <p>/ Piece</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Very thorough checking.</p>   
+                                <p>Guaranteed not to smell musty.</p>    
+                                <p>Stains are guaranteed to be clean.</p>    
+                                <p>Neat iron and packing in hanger.</p>     
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-shirt"></i>
+                            <h2>6 Hours</h2>
+                            <h1>Rp 8,000</h1>
+                            <p>/ Piece</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Very thorough checking.</p>   
+                                <p>Guaranteed not to smell musty.</p>    
+                                <p>Stains are guaranteed to be clean.</p>    
+                                <p>Neat iron and packing in hanger.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-shirt"></i>
+                            <h2>12 Hours</h2>
+                            <h1>Rp 6,000</h1>
+                            <p>/ Piece</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Very thorough checking.</p>   
+                                <p>Guaranteed not to smell musty.</p>    
+                                <p>Stains are guaranteed to be clean.</p>    
+                                <p>Neat iron and packing in hanger.</p>  
+                            </div>  
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-shirt"></i>
+                            <h2>1 Day</h2>
+                            <h1>Rp 3,000</h1>
+                            <p>/ Piece</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Very thorough checking.</p>   
+                                <p>Guaranteed not to smell musty.</p>    
+                                <p>Stains are guaranteed to be clean.</p>    
+                             <p>Neat iron and packing in hanger.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="box-container1" data-name="shoe">
+                        <div class="box">
+                            <i class="fa-solid fa-shoe-prints"></i>
+                            <h2>3 Hours</h2>
+                            <h1>Rp 65,000</h1>
+                            <p>/ Pair</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>The prices above are the prices for washing services for casual shoes, sneakers, sneakers, and flat shoes.</p>      
+                                <p>The above price is the price per pair</p>    
+                                <p>Clean and maximum shoe washingGuaranteed not to smell musty.</p>   
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-shoe-prints"></i>
+                            <h2>6 Hours</h2>
+                            <h1>Rp 50,000</h1>
+                            <p>/ Pair</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>The prices above are the prices for washing services for casual shoes, sneakers, sneakers, and flat shoes.</p>      
+                                <p>The above price is the price per pair</p>    
+                             <p>Clean and maximum shoe washingGuaranteed not to smell musty.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-shoe-prints"></i>
+                            <h2>12 Hours</h2>
+                            <h1>Rp 35,000</h1>
+                            <p>/ Pair</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>The prices above are the prices for washing services for casual shoes, sneakers, sneakers, and flat shoes.</p>      
+                                <p>The above price is the price per pair</p>    
+                                <p>Clean and maximum shoe washingGuaranteed not to smell musty.</p> 
+                            </div>  
+                            </div>
+                            <div class="box">
+                                <i class="fa-solid fa-shoe-prints"></i>
+                                <h2>1 Day</h2>
+                                <h1>Rp 25,000</h1>
+                                <p>/ Pair</p>
+                                <div class="text">
+                                    <p>Completed when the note is received.</p>
+                                    <p>The prices above are the prices for washing services for casual shoes, sneakers, sneakers, and flat shoes.</p>      
+                                    <p>The above price is the price per pair</p>    
+                                    <p>Clean and maximum shoe washingGuaranteed not to smell musty.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="price-list" class="tab-content">
+        <h3>Price List</h3>
+        <div class="price">
+            <h1 class="heading">Price List</h1>
+            <div class="content">
+                <div class="row mt-5" id="filter-buttons">
+                    <div class="isi5">
+                        <button class="btn mb-2 me-1 active" data-filter="kilo">Kilogram</button>
+                        <button class="btn mb-2 mx-1" data-filter="deep">Deep Cleaning</button>
+                        <button class="btn mb-2 mx-1" data-filter="shoe">Shoe Wash</button>
+                    </div>
+                </div>
+
+                <div class="shop-content" id="filterable-cards">
+                    <div class="box-container1" data-name="kilo">
+                        <div class="box">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                            <h2>3 Hours</h2>
+                            <h1>Rp 25,000</h1>
+                            <p>/ Kilogram</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Wash separately according to color, material and type of clothing.</p>   
+                                <p>Check more thoroughly.</p>    
+                                <p>Ironing is neater.</p>    
+                                <p>Guaranteed not to fade.</p>    
+                                <p>Packaging is folded.</p> 
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                            <h2>6 Hours</h2>
+                            <h1>Rp 15,000</h1>
+                            <p>/ Kilogram</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Wash separately according to color, material and type of clothing.</p>   
+                                <p>Check more thoroughly.</p>    
+                                <p>Ironing is neater.</p>    
+                                <p>Guaranteed not to fade.</p>    
+                                <p>Packaging is folded.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                            <h2>12 Hours</h2>
+                            <h1>Rp 10,000</h1>
+                            <p>/ Kilogram</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Wash separately according to color, material and type of clothing.</p>   
+                                <p>Check more thoroughly.</p>    
+                                <p>Ironing is neater.</p>    
+                                <p>Guaranteed not to fade.</p>    
+                                <p>Packaging is folded.</p>  
+                            </div>  
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                            <h2>1 Day</h2>
+                            <h1>Rp 6,000</h1>
+                            <p>/ Kilogram</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Wash separately according to color, material and type of clothing.</p>   
+                                <p>Check more thoroughly.</p>    
+                                <p>Ironing is neater.</p>    
+                                <p>Guaranteed not to fade.</p>    
+                                <p>Packaging is folded.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="box-container1" data-name="deep" >
+                        <div class="box">
+                            <i class="fa-solid fa-shirt"></i>
+                            <h2>3 Hours</h2>
+                            <h1>Rp 15,000</h1>
+                            <p>/ Piece</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Very thorough checking.</p>   
+                                <p>Guaranteed not to smell musty.</p>    
+                                <p>Stains are guaranteed to be clean.</p>    
+                                <p>Neat iron and packing in hanger.</p>     
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-shirt"></i>
+                            <h2>6 Hours</h2>
+                            <h1>Rp 8,000</h1>
+                            <p>/ Piece</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Very thorough checking.</p>   
+                                <p>Guaranteed not to smell musty.</p>    
+                                <p>Stains are guaranteed to be clean.</p>    
+                                <p>Neat iron and packing in hanger.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-shirt"></i>
+                            <h2>12 Hours</h2>
+                            <h1>Rp 6,000</h1>
+                            <p>/ Piece</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Very thorough checking.</p>   
+                                <p>Guaranteed not to smell musty.</p>    
+                                <p>Stains are guaranteed to be clean.</p>    
+                                <p>Neat iron and packing in hanger.</p>  
+                            </div>  
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-shirt"></i>
+                            <h2>1 Day</h2>
+                            <h1>Rp 3,000</h1>
+                            <p>/ Piece</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>Waste wear guarantee 35,000/pcs.</p>      
+                                <p>Guarantee for lost clothes 50,000/piece.</p>    
+                                <p>Very thorough checking.</p>   
+                                <p>Guaranteed not to smell musty.</p>    
+                                <p>Stains are guaranteed to be clean.</p>    
+                             <p>Neat iron and packing in hanger.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="box-container1" data-name="shoe">
+                        <div class="box">
+                            <i class="fa-solid fa-shoe-prints"></i>
+                            <h2>3 Hours</h2>
+                            <h1>Rp 65,000</h1>
+                            <p>/ Pair</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>The prices above are the prices for washing services for casual shoes, sneakers, sneakers, and flat shoes.</p>      
+                                <p>The above price is the price per pair</p>    
+                                <p>Clean and maximum shoe washingGuaranteed not to smell musty.</p>   
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-shoe-prints"></i>
+                            <h2>6 Hours</h2>
+                            <h1>Rp 50,000</h1>
+                            <p>/ Pair</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>The prices above are the prices for washing services for casual shoes, sneakers, sneakers, and flat shoes.</p>      
+                                <p>The above price is the price per pair</p>    
+                             <p>Clean and maximum shoe washingGuaranteed not to smell musty.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-shoe-prints"></i>
+                            <h2>12 Hours</h2>
+                            <h1>Rp 35,000</h1>
+                            <p>/ Pair</p>
+                            <div class="text">
+                                <p>Completed when the note is received.</p>
+                                <p>The prices above are the prices for washing services for casual shoes, sneakers, sneakers, and flat shoes.</p>      
+                                <p>The above price is the price per pair</p>    
+                                <p>Clean and maximum shoe washingGuaranteed not to smell musty.</p> 
+                            </div>  
+                            </div>
+                            <div class="box">
+                                <i class="fa-solid fa-shoe-prints"></i>
+                                <h2>1 Day</h2>
+                                <h1>Rp 25,000</h1>
+                                <p>/ Pair</p>
+                                <div class="text">
+                                    <p>Completed when the note is received.</p>
+                                    <p>The prices above are the prices for washing services for casual shoes, sneakers, sneakers, and flat shoes.</p>      
+                                    <p>The above price is the price per pair</p>    
+                                    <p>Clean and maximum shoe washingGuaranteed not to smell musty.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="calculate-price" class="tab-content">
+        <div class="content3">
+            <div class="form-group">
+                <label for="service-type">Select Service:</label>
+                <select id="service-type" onchange="updateService()">
+                    <option value="kilogram">Kilogram</option>
+                    <option value="deep-cleaning">Deep Cleaning</option>
+                    <option value="shoe-wash">Shoe Wash</option>
+                </select>
+            </div>
+            
+            <div id="service-options" class="form-group">
+                <!-- Options will be inserted here by JavaScript -->
+            </div>
+            
+            <div class="form-group">
+                <label for="quantity">Enter Quantity:</label>
+                <input type="number" id="quantity" min="1" value="1" oninput="calculateTotal()">
+            </div>
+            
+            <div id="time-options" class="form-group">
+                <!-- Time options will be inserted here by JavaScript -->
+            </div>
+            
+            <div id="total-price">
+                Total Price: Rp <span id="price-value">0</span> 
+            </div>
+            
+            <button id="booking-button" onclick="bookNow()">Booking</button>
+        </div>
+    </div>
+    
+    
+    
+
+    <div id="contact" class="tab-content">
+        <div class="content4">
+            <div class="isi41">
+                <i class="fa-brands fa-whatsapp">(62)81808151558</i>
+                <i class="fa fa-phone" aria-hidden="true">(62)81808151558</i>
+                <i class="fa-solid fa-envelope">dzakiraffa07@gmail.com</i>
+                <i class="fa-solid fa-location-dot">No.69 G, Jl. Kemang Raya No.2, Bangka, Mampang Prapatan,South Jakarta City, Jakarta 12730</i>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63455.58466045995!2d106.815794!3d-6.2671443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f17fe02c6463%3A0x49c9f79c3fc2cca5!2sFRIO%20LAUNDRY%20%26%20DRY%20CLEANING!5e0!3m2!1sid!2sid!4v1721147626007!5m2!1sid!2sid" width="500" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="isi42">
+                <div class="input3">
+                    <input type="text" required>
+                    <div class="labelline">Enter your name</div>
+                </div>
+                <div class="input3">
+                    <input type="text" required>
+                    <div class="labelline">Whatsapp number</div>
+                </div>
+                <div class="input3">
+                    <input type="text" required>
+                    <div class="labelline">Address</div>
+                </div>
+                <div class="input3">
+                    <input type="text" required>
+                    <div class="labelline">Email</div>
+                </div>
+                <div class="input3">
+                    <input type="text" required>
+                    <div class="labelline">Your Question</div>
+                </div>
+                <div class="submit">
+                    <h1 onclick="myFunction()">SUBMIT</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="credit">
+          <p>Created by Muhammad Dzaki Raffa | &copy; 2024</p>
+          <a href="https://www.gettyimages.com/photos/laundry">Image Source</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,952 @@
+/* import google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+    --primary-color: #4535C1;
+    --decent-color: #478CCF;
+    --accent-color: #36C2CE;
+    --secondary-color: #77E4C8;
+    --font-family: "Poppins", sans-serif;
+    --text-color: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+  }
+  
+  body {
+    background-color: white;
+    font-family: Poppins;
+    max-height: 2000px;
+    max-width: 2000px;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: var(--decent-color);
+  }
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    font-size: larger;
+    color: white;
+}
+
+.navbar .tab {
+  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+}
+
+.navbar .navbar-title span {
+  color: var(--secondary-color);
+}
+
+.navbar .tab button {
+  font-size: large;
+  color: white;
+  background-color: var(--decent-color);
+}
+.navbar .tab button:hover {
+  color: rgb(61, 61, 150);
+  transition: 0.5s;
+}
+
+.navbar .tab button.active {
+  color: var(--secondary-color);
+  transition: 0.5s;
+}
+
+
+
+
+.navbar #booking-btn {
+  background-color: yellow;
+  color: black;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 3px rgb(13, 13, 44);
+}
+
+.navbar #booking-btn:hover {
+  transition: 0.5 ease;
+  background-color: rgba(255, 255, 0, 0.795);
+  box-shadow: 3px 3px 10px rgb(13, 13, 44);
+}
+
+.hero {
+ position: relative;
+ height: 100vh;
+ background-image: url(img/laundry\ \(1\).jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ display: flex;
+ justify-content: left;
+ align-items: center;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    margin-top: 3rem;
+    z-index: 1;
+  }
+  
+  .hero .content h1 {
+    font-size: 4em;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(1, 1, 3, 1);
+    line-height: 1.2;
+  }
+  
+  .hero .content h3 {
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgba(1, 1, 3, 1);
+    mix-blend-mode: difference;
+  }
+  
+  .hero .content #booking-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: yellow;
+    background-color: rgb(52, 52, 179);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgb(13, 13, 44);
+  }
+
+  .hero .content #booking-btn:hover {
+    transition: 0.5 ease;
+    background-color: rgb(52, 102, 179);
+    box-shadow: 3px 3px 10px rgb(13, 13, 44);
+  }
+
+.isi .contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding: 20px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background-color: var(--decent-color);
+  color: white;
+  
+}
+
+.isi .contact .box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1px;
+  justify-items: center;
+}
+
+.isi .contact .box i {
+  font-size: x-large;
+}
+
+.isi .container {
+  padding: 15px 9%;
+  /* padding-bottom: 100%; */
+  margin-top: 2rem;
+  line-height: 2;
+}
+
+.isi .container .heading {
+  text-align: center;
+  padding-bottom: 15px;
+  color: yellow;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+  mix-blend-mode: difference;
+}
+
+.isi .container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+.isi .container .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--primary-color);
+  text-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
+}
+
+.isi .container .box-container .box p {
+  color: gray;
+}
+
+.isi .aspect .heading {
+  margin-top: 5rem;
+  text-align: center;
+  padding-bottom: 15px;
+  color: yellow;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+  mix-blend-mode: difference;
+}
+
+.aspect .main .isi1 {
+ margin-top: 1rem;
+ display: flex;
+ flex-direction:row;
+ margin-left: 80px;
+ margin-right: 80px;
+ gap: 2rem;
+}
+
+.aspect .main .isi1 h1 {
+  color: var(--decent-color);
+  font-size: large;
+  padding-bottom: 0.5rem;
+}
+
+.aspect .main .isi1 p {
+  color: gray;
+  font-size: small;
+}
+
+.aspect .main .isi1 span {
+  color: var(--decent-color);
+}
+
+.aspect .main .isi1 img:hover {
+  transform: scale(0.9);
+  transition: 1s ease-in;
+  transition: 1s ease-out;
+}
+
+.aspect .main .isi2 {
+  margin-top: 1rem;
+  margin-left: 80px;
+  margin-right: 80px;
+  gap: 0.5rem;
+  color: gray;
+  font-size: small;
+}
+
+.aspect .main .isi2 span {
+  color: var(--decent-color);
+}
+
+.isi .contact2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding: 20px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background-color: var(--decent-color);
+  color: white;
+  
+}
+
+.isi .contact2 .box {
+  display: grid;
+  justify-items: center;
+}
+
+.isi .contact2 .box i {
+  font-size: x-large;
+}
+
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--primary-color);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.1rem;
+  margin-bottom: 0px;
+}
+
+footer .credit p {
+  margin: 0.5rem;
+  font-size: small;
+  color: white;
+  font-weight: bold;
+}
+
+
+footer .credit a {
+  font-size: small;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+
+.isi .price .heading {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  color: yellow;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+  mix-blend-mode: difference;
+}
+
+.isi .price .content .isi5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  border-spacing: 0;
+  border-collapse: separate;
+  gap: 20px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding-bottom: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+.isi .price .content .isi5 button {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px 20px;
+  color: white;
+  background-color: var(--decent-color);
+  border-radius: 30px;
+  transition: background-color 0.8s ease; /* Animasi perubahan warna latar belakang */
+}
+
+.isi .price .content .isi5 button:hover {
+  background-color: var(--accent-color); /* Warna latar belakang saat dihover */
+}
+
+.isi .price .content .isi5 button.active {
+  background-color: var(--primary-color); /* Warna latar belakang saat ditekan */
+  transition: 0.5s;
+}
+
+
+
+
+
+.isi .price .shop-content .box-container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.isi .price .shop-content .box-container1 .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--primary-color);
+  text-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
+  animation: fadeEffect 1s;
+}
+
+.isi .price .shop-content .box-container1 .box p {
+  color: gray;
+}
+
+.isi .price .shop-content .box-container1 .box .text p {
+  color: green;
+  margin-top: 10px;
+}
+
+.isi .price .shop-content .box-container1 .box i {
+  font-size: x-large;
+}
+
+
+
+.price .isi5 p {
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+/* tab2 */
+
+.tab-content .price .heading {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  color: yellow;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+  mix-blend-mode: difference;
+}
+
+.tab-content .price .content .isi5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  border-spacing: 0;
+  border-collapse: separate;
+  gap: 10px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding-bottom: 2rem;
+  padding: 1px;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
+.tab-content .price .content .isi5 button {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 15px 5px;
+  color: white;
+  background-color: var(--decent-color);
+  border-radius: 30px;
+  transition: background-color 0.8s ease; /* Animasi perubahan warna latar belakang */
+}
+
+.tab-content .price .content .isi5 button:hover {
+  background-color: var(--accent-color); /* Warna latar belakang saat dihover */
+}
+
+.tab-content .price .content .isi5 button.active {
+  background-color: var(--primary-color); /* Warna latar belakang saat ditekan */
+  transition: 0.5s;
+}
+
+
+
+
+
+.tab-content .price .shop-content .box-container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.tab-content .price .shop-content .box-container1 .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--primary-color);
+  text-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
+  animation: fadeEffect 1s;
+}
+
+.tab-content .price .shop-content .box-container1 .box p {
+  color: gray;
+}
+
+.tab-content .price .shop-content .box-container1 .box .text p {
+  color: green;
+  margin-top: 10px;
+}
+
+.tab-content .price .shop-content .box-container1 .box i {
+  font-size: x-large;
+}
+
+
+
+.price .isi5 p {
+  cursor: pointer;
+  margin: 10px 0;
+}
+ 
+
+.tab-content .content4 {
+  margin-top: 8rem;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 5rem;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-shadow: 5px 4px 80px rgba(0, 0, 0, 0.7);
+}
+
+.tab-content .content4 .isi41,
+.tab-content .content4 .isi42 {
+  flex: 1;
+  min-width: 300px; /* Adjust as needed for responsiveness */
+  padding: 20px;
+  padding-right: 70px;
+}
+
+/* .tab-content .content4 .isi42 {
+  width: 400px;
+} */
+
+.tab-content .content4 .isi41 i {
+  color: white;
+  display: block;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-shadow: 1px 2px 4px rgb(13, 13, 44);
+}
+
+.input3 {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 0.6em;
+}
+
+.input3 input {
+  width: 100%;
+  outline: none;
+  font-size: 1.5em;
+  padding: 0 30px;
+  line-height: 70px;
+  border-radius: 10px;
+  border: 2px solid var(--accent-color);
+  background: transparent;
+  transition: 0.1s ease;
+  z-index: 1111;
+}
+
+.input3 .labelline {
+  /* position: absolute; */
+  font-size: 1.4em;
+  color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0 25px;
+  margin-right: 18rem;
+  background-color: var(--primary-color);
+  transition: 0.2s ease;
+}
+
+.input3 input:focus,
+.input3 input:valid {
+  color: white;
+  border: 4px solid var(--decent-color);
+}
+
+.input3 input:focus + .labelline,
+.input3 input:valid + .labelline {
+  color: var(--secondary-color);
+  height: 30px;
+  line-height: 10px;
+  padding: 0 12px;
+  margin-right: 18rem;
+  transform: translate(-15px, -16px) scale(0.88);
+  z-index: 1111;
+}
+
+
+.tab-content .content4 .isi42 .submit {
+  background-color: yellow;
+  margin-left: 100px;
+  margin-right: 40px;
+  border-radius: 50px;
+  box-shadow: 1px 2px 4px rgb(13, 13, 44);
+  cursor: pointer;
+}
+
+.tab-content .content4 .isi42 .submit h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 2px 4px rgb(13, 13, 44);
+}
+
+.tab-content .content4 .isi42 .submit:hover {
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+
+/* content 3 */
+
+#calculate-price {
+  margin: 20px;
+}
+
+.content3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--primary-color);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 80px rgba(0, 0, 0, 0.7);
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+.content3 label {
+  font-size: larger;
+}
+
+label {
+  margin: 10px 0;
+  color: white;
+  font-size: larger;
+}
+
+input, select {
+  margin: 10px 0;
+  color: black;
+  font-size: large;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#total-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: right;
+  color: yellow;
+}
+
+#booking-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#booking-button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+@media (min-width: 1200px) {
+  .navbar, .footer, .content3, .tab-content .content4, .isi .container, .aspect .main .isi1, .aspect .main .isi2, .isi .price .content .isi5, .isi .price .shop-content .box-container1, .tab-content .price .content .isi5, .tab-content .price .shop-content .box-container1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .tab-content .content3 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar, .footer, .content3, .tab-content .content4, .isi .container, .aspect .main .isi1, .aspect .main .isi2, .isi .price .content .isi5, .isi .price .shop-content .box-container1, .tab-content .price .content .isi5, .tab-content .price .shop-content .box-container1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .tab-content .content3 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar, .footer, .content3, .tab-content .content4, .isi .container, .aspect .main .isi1, .aspect .main .isi2, .isi .price .content .isi5, .isi .price .shop-content .box-container1, .tab-content .price .content .isi5, .tab-content .price .shop-content .box-container1 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .tab-content .content3 {
+    margin-top: 10rem;
+    margin-bottom: 30rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 1rem;
+  }
+  .hero .content h1 {
+    font-size: 3rem;
+  }
+  .hero .content h3 {
+    font-size: 1.2rem;
+  }
+  .navbar, .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    padding: 1px;
+    align-items: center;
+    font-size: larger;
+    color: white;
+}
+
+.navbar .tab {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  
+}
+
+.navbar .tab button {
+  font-size: small;
+  color: white;
+  background-color: var(--decent-color);
+  
+}
+
+.navbar #booking-btn {
+  margin-top: 10px;
+  
+}
+  .isi .container .box-container, .isi .price .content .isi5, .isi .price .shop-content .box-container1, .tab-content .price .content .isi5, .tab-content .price .shop-content .box-container1 {
+    grid-template-columns: 1fr;
+  }
+  .content3 {
+    margin: 1rem;
+  }
+  .aspect .main .isi1, .aspect .main .isi2 {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+  }
+  .isi .contact, .isi .contact2 {
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+  }
+/* yang gua ubah */
+
+  .aspect .main .isi1 {
+    flex-direction: column;
+  }
+
+
+  .isi .price .content .isi5, .tab-content .price .content .isi5 {
+    justify-content: center;
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .isi .price .content .isi5 button, .tab-content .price .content .isi5 button {
+
+    border-radius: 5px;
+  }
+
+  .tab-content .content3 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .tab-content .price {
+    margin-top: 5rem;
+  }
+
+  .tab-content .content4 .isi41 {
+    margin-left: 50px;
+    margin-right: 10px;
+    /* margin-bottom: 1rem; */
+  }
+
+  .tab-content .content4 .isi41 iframe {
+    transform: scale(0.6);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+    right: 95px;
+    margin-bottom: 0px;
+  }
+
+  .tab-content .content4 .isi42 {
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .input3 {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1em;
+  }
+  
+  .input3 input {
+    width: 80%;
+    outline: none;
+    font-size: 1.5em;
+    padding: 0 30px;
+    line-height: 60px;
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+  }
+  
+  .input3 .labelline {
+    /* position: absolute; */
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+    padding: 0 ;
+    margin: 0 25px;
+    margin-right: 18rem;
+    background-color: var(--primary-color);
+    transition: 0.2s ease;
+  }
+  
+  .input3 input:focus,
+  .input3 input:valid {
+    color: white;
+    border: 4px solid var(--decent-color);
+  }
+  
+  .input3 input:focus + .labelline,
+  .input3 input:valid + .labelline {
+    color: var(--secondary-color);
+    height: 30px;
+    line-height: 10px;
+    padding: 0 12px;
+    margin-right: 18rem;
+    transform: translate(-15px, -1px) scale(0.88);
+    z-index: 1111;
+  }
+  
+  
+  .tab-content .content4 .isi42 .submit {
+    background-color: yellow;
+    margin-left: 100px;
+    margin-right: 92px;
+    border-radius: 50px;
+    box-shadow: 1px 2px 4px rgb(13, 13, 44);
+    cursor: pointer;
+  }
+  
+  .aspect .main .isi1 img {
+    transform: scale(0.5);
+    right: 140px;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1px;
+    margin-top: 1px;
+  }
+
+  .aspect .main .isi1 img:hover {
+    transform: scale(0.4);
+  }
+
+  .aspect .main .isi1 .text {
+    margin-top: 0;
+  }
+/* yang gua ubah */
+
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 0.875rem;
+  }
+  .hero .content h1 {
+    font-size: 2.5rem;
+  }
+  .hero .content h3 {
+    font-size: 1rem;
+  }
+  .navbar .tab {
+    gap: 10px;
+  }
+  .navbar .tab button {
+    font-size: medium;
+  }
+ .aspect .main .isi1 h1, .aspect .main .isi1 span, .aspect .main .isi2 span, .isi .price .content .isi5 button, .isi .price .shop-content .box-container1 .box p, .isi .price .shop-content .box-container1 .box .text p, .tab-content .price .content .isi5 button, .tab-content .price .shop-content .box-container1 .box p, .tab-content .price .shop-content .box-container1 .box .text p, .tab-content .content4 .isi41 i, .input3 .labelline, label {
+    font-size: smaller;
+  }
+  #booking-btn, #booking-button, .hero .content #booking-btn, .tab-content .content4 .isi42 .submit, .isi .price .content .isi5 button, .tab-content .price .content .isi5 button {
+    font-size: smaller;
+  }
+}
+
+
+
